@@ -404,5 +404,20 @@ This lab can be completed following the steps below.
 11. Double click on the STSA-CONV node. Change the workspace ID to the one you copied when the workspace was saved. Step 6 above.
 12. Click done.
 13. Click Deploy
-14. Click the link below.
+14. Before the next step, copy the hostname of your NodeRed application. This is the hostname in the URL of your browers. Something like STSAWorkshops-xxx.mybluemix.net You will need this for a future step.
+14. Click the link
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
+
+15. When the BlueMix Devops page loads, click the **deploy** button at the bottom of the page.
+16. Click the **Delivery Pipeline** tile.
+17. Once the Deploy stage is completed, click on the **Rocket** icon. This will take you to your newly created application.
+18. Click on the **runtime** link on the left. Then click the **Environment Variables** link in the center.
+19. If you scroll down to the bottom you will see and entry for **Conversatin_URL**.
+20. Paste your URL from step 15 into the entry field. **Make sure to keep the "/v1/workspaces...." information**.
+21. Click Save.
+22. Clik the **Visit APP URL** link.
+23. You will get an error. Add **/webclient** to your URL and click enter.
+
+You are done. Nice job
+
+## Hybrid Cloud
