@@ -10,7 +10,7 @@ Make sure the following services are provisioned
 1. Start your NodeRed application and click **Connections** link on the left navigation.
 2. You should see a tile for the "Cloudant" service. If you do not see a tile for "dashDB" or the "IoT Foundation", you must add them by clicking on the **connect existing** button on the right.
 3. You should be prompted with a list of tiles for "Conversation", "dashDB", and "Internet of Things". Select one tile at a time and then click the **Connect** button. You will be prompted to restage, click **restage**.
-4. Once all of the services are conntected to th application, you can click on the **visit App URL** link at the top of the page. This will take you to the NodeRed Editor.
+4. Once all of the services are connected to the application, you can click on the **visit App URL** link at the top of the page. This will take you to the NodeRed Editor.
 
 ### Add IoT Flow to Editor
 
@@ -390,4 +390,12 @@ Make sure you have your IoT Foundation information which includes
 9. Click **Deploy**
 
 ## Watson Conversation Lab
-This lab can be completed following the steps.
+This lab can be completed following the steps below.
+1. Click the link above for the file "wk2-wcs-workspace.json".
+2. Triple click on the text that is very long line of JSON code. This could highlight all of the text. Copy the text and paste it into a text editor of you choice and save it as the same file name.
+3. Start the Watson Conversation Workspace by clicking on the Watson Conversation service in your BlueMix dashboard.
+4. Once you are in the workspace import the JSON file, by clicking on the import icon at the top of the workspace dashboard.
+5. The screen should open to the newly created workspace. The icon at the bottom of the list of icons on the left navigation will take you back to workspaces. Click the icon. You should see the "STSA-Lab" workspace.
+6. Click the **3** buttons and select view details. Highlight the WorkspaceID, copy it and then paste it in a temporary spot.
+7. Click the link above for the "wk2-wcs-flow.json" file. Copy the text and paste it into the NodeRed Editor. Make sure to select "new flow" when importing.
+8. 
