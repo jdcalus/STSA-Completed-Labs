@@ -391,7 +391,7 @@ Make sure you have your IoT Foundation information which includes
 
 ## Watson Conversation Lab
 This lab can be completed following the steps below.
-1. Click the link above for the file "wk2-wcs-workspace.json".
+1. Click the link [a relative link](wk2-wcs-workspace.json) at the top of the page  for the file "wk2-wcs-workspace.json". **Make sure you pick the correct file**
 2. Triple click on the text that is very long line of JSON code. This could highlight all of the text. Copy the text and paste it into a text editor of you choice and save it as the same file name.
 3. Start the Watson Conversation Workspace by clicking on the Watson Conversation service in your BlueMix dashboard.
 4. Once you are in the workspace import the JSON file, by clicking on the import icon at the top of the workspace dashboard.
