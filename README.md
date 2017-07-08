@@ -397,7 +397,7 @@ This lab can be completed following the steps below.
 4. Once you are in the workspace import the JSON file, by clicking on the import icon at the top of the workspace dashboard.
 5. The screen should open to the newly created workspace.
 6. The icon at the bottom of the list of icons on the left navigation will take you back to workspaces. Click the icon. You should see the "STSA-Lab" workspace.
-6. Click the **3** buttons and select view details. Highlight the WorkspaceID, copy it and then paste it in a temporary spot.
+6. Click the **3** buttons on the STSA-LAB tile. Then select view details. Highlight the WorkspaceID, copy it and then paste it in a temporary spot.
 7. Click the link [a relative link](wk2-wcs-flow.json).
 8. Copy the text and paste it into the NodeRed Editor. **Make sure to select "new flow" when importing.**
 8. Double click on the **IOT: ColorChange**. Make sure the device ID is the proper value, something similar to "sensehat-xx".
@@ -416,9 +416,11 @@ This lab can be completed following the steps below.
 19. If you scroll down to the bottom you will see and entry for **Conversatin_URL**.
 20. Paste your URL from step 15 into the entry field. **Make sure to keep the "/v1/workspaces...." information**.
 21. Click Save.
+21. Click the Overview link on the left navigation. You might have to wait for the application to restart.
 22. Clik the **Visit APP URL** link.
 23. You will get an error. Add **/webclient** to your URL and click enter.
 
 You are done. Nice job
 
 ## Hybrid Cloud
+[README](your-project-name/blob/master/completed-flows-part-1_2.json)
