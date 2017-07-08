@@ -14,8 +14,7 @@
 
 
 # Purpose
-The purpose of this page is to allow anyone who wants to quickly get a completed lab installed to then work on a subsequent lab, they can do so. I just about every case, each lab can be installed and running within 5 minutes. This will help in the event you get behind.
-Please note, this is dependent on BlueMix provisioning services in a timely manner.
+The purpose of this page is to allow anyone who wants to quickly get a completed lab installed to then work on a subsequent lab, they can do so. In just about every case, each lab can be installed and running within 5 minutes. This will help, in the event you get behind. Please note, this is also dependent on BlueMix provisioning services in a timely manner.
 
 
 
