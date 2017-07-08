@@ -423,8 +423,21 @@ This lab can be completed following the steps below.
 You are done. Nice job
 
 ## Hybrid Cloud
-Click the link below and copy the text. Paste it into a new flow in NodeRed
+Click the link  and copy the text. Paste it into a new flow in NodeRed
 [Exercise 1 and 2](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-1_2.json)
 
-Click the link below and copy the text. Paste it into a new flow in NodeRed
+Click the link  and copy the text. Paste it into a new flow in NodeRed
 [Exercise 3 - 5](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-3.json)
+In this flow, there two **http request** nodes. You need your weather company data credentials to update these nodes.
+1. In the Bluemix dashboard, click on your Weather Company Data tile.
+2. ON the left navigation there is a link for **Service Credentials**. Click the link.
+3. Click the **view credentials** in the middle of the screen. You need to copy the username and password so you can update the "http nodes"
+4. Go back to NodeRed and double click on the **http node**.
+5. Click on the **use basic authentication** check box.
+6. Paste your Weather Data username and password into the respective field.
+7. Click **done**.
+8. Do the same thing again for the other **https request** node.
+9. Click **Deploy**
+
+
+## Blockchain
