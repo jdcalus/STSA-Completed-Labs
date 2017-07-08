@@ -388,3 +388,6 @@ Make sure you have your IoT Foundation information which includes
 7. Double click on **All Commands** node and change the **DeviceID** to your "SenseHat-xxx" assigned number.
 8. Click **Done**
 9. Click **Deploy**
+
+## Watson Conversation Lab
+This lab can be completed following the steps.
