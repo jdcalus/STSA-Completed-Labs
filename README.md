@@ -423,4 +423,8 @@ This lab can be completed following the steps below.
 You are done. Nice job
 
 ## Hybrid Cloud
-[README](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-1_2.json)
+Click the link below and copy the text. Paste it into a new flow in NodeRed
+[Exercise 1 and 2](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-1_2.json)
+
+Click the link below and copy the text. Paste it into a new flow in NodeRed
+[Exercise 3 - 5](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-3.json)
