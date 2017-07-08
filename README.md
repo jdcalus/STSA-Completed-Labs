@@ -441,17 +441,22 @@ In this flow, there two **http request** nodes. You need your weather company da
 
 
 ## Blockchain
-Clik the link and copy the text. Paste it into a new flow in NodeRed.
-[Node Red Flow](https://github.com/SweetJenn23/BlockchainLab/blob/master/completed-blockchain-flow.json)
 
-If you get an error about **Unrecognized Types** you will need to add the "Dashboard" UI nodes. Follow the next steps to install the UI nodes.
+Go to NodeRed.
 
 1. Click the menu in the upper right corner.
 2. Click the **manage palette** link.
 3. Click the **install** tab.
 3. Search for **Dashboard** in the search field.
 4. Locate the "node-red-dashboard" in the list.
-5. Click the install button.
-6. Click **Done**
+5. Click the install button. Wait a few minutes.
+6. Click **Close**
 
-You are  all set now. 
+Clik the link and copy the text. Paste it into a new flow in NodeRed.
+[Node Red Flow](https://github.com/SweetJenn23/BlockchainLab/blob/master/completed-blockchain-flow.json)
+
+1. Double click on the **Current Weather** node. Add your weather data username and password.
+2. Click **done** when completed.
+3. Click **deploy**
+
+You are  all set now.
