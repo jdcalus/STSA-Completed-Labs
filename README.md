@@ -441,3 +441,5 @@ In this flow, there two **http request** nodes. You need your weather company da
 
 
 ## Blockchain
+Clik the link and copy the text. Paste it into a new flow in NodeRed.
+[Node Red Flow](https://github.com/SweetJenn23/BlockchainLab/blob/master/completed-blockchain-flow.json)
