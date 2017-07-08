@@ -1,16 +1,41 @@
+
 # Completed Labs
+
+# Table of Contents
+1. [IoT Lab](#Lab-1-Internet-of-Things)
+    - [Bind Services to NodeRed](#setup-nodered)
+    - [Copy iot flow](#add-iot-flow-to-editor)
+    - [DashDB setup](#add-table-to-dashdb)
+    - [Pi Setup](#update-the-raspberry-pi-nodered)
+2. [Watson Conversation Lab](#watson-conversation-lab)
+    - [WebClient Install](#webclient-application-for-wcs-lab)
+3. [Hybrid Cloud Lab](#hybrid-cloud)
+4. [Blockchain Lab](#blockchain)
+
+
+# Purpose
+The purpose of this page is to allow anyone who wants to quickly get a completed lab installed to then work on a subsequent lab, they can do so. I just about every case, each lab can be installed and running within 5 minutes. This will help in the event you get behind.
+Please note, this is dependent on BlueMix provisioning services in a timely manner.
+
+
+
+
 
 ## Lab 1 Internet of Things
 Make sure the following services are provisioned
 - IoT Foundation
 - DashDB
 
-### Make sure you have created your **NodeRed** application
+
+### Setup NodeRed
+
+Make sure you have created your **NodeRed** application withing Bluemix
 
 1. Start your NodeRed application and click **Connections** link on the left navigation.
 2. You should see a tile for the "Cloudant" service. If you do not see a tile for "dashDB" or the "IoT Foundation", you must add them by clicking on the **connect existing** button on the right.
 3. You should be prompted with a list of tiles for "Conversation", "dashDB", and "Internet of Things". Select one tile at a time and then click the **Connect** button. You will be prompted to restage, click **restage**.
 4. Once all of the services are connected to the application, you can click on the **visit App URL** link at the top of the page. This will take you to the NodeRed Editor.
+
 
 ### Add IoT Flow to Editor
 
@@ -337,6 +362,7 @@ Copy the text below
 6. Double click on **IoT:Environment** node. Change "authentication" to **BlueMix Services** and then make sure the  **Device id** is set to **ALL**.
 7. Double click on **IoT:Commands** node. Change "authentication" to **BlueMix Services** and then change **Device id** to **sensehat-xx** where xx is your team number assigned at the begining of the course.
 
+
 ## Add Table to DashDB
 Copy the following text to your clipboad.
 
@@ -368,6 +394,8 @@ CREATE TABLE "SENSEDATA"
 5. Click **Run DDL**
 6. You can close DashDB
 
+
+
 ## Update the Raspberry Pi NodeRed
 This requires you to update the NodeRed instance running on the Raspberry Pi. Copy the text below and paste in your NodeRed Editor on the Pi.
 ```
@@ -389,38 +417,44 @@ Make sure you have your IoT Foundation information which includes
 8. Click **Done**
 9. Click **Deploy**
 
+
 ## Watson Conversation Lab
 This lab can be completed following the steps below.
-1. Click the link [a relative link](wk2-wcs-workspace.json)
-2. Triple click on the text that is very long line of JSON code. This could highlight all of the text. Copy the text and paste it into a text editor of you choice and save it as the same file name.
+1. Click the link [Conversation Workspace](https://raw.github.com/jdcalus/STSA-Workshop-2-WCS/master/wk2-wcs-workspace.json)
+2. Highlight all of the text. Copy the text and paste it into a text editor of you choice and save it as "wk2.wcs-workspace.json".
 3. Start the Watson Conversation Workspace by clicking on the Watson Conversation service in your BlueMix dashboard.
 4. Once you are in the workspace import the JSON file, by clicking on the import icon at the top of the workspace dashboard.
 5. The screen should open to the newly created workspace.
 6. The icon at the bottom of the list of icons on the left navigation will take you back to workspaces. Click the icon. You should see the "STSA-Lab" workspace.
 6. Click the **3** buttons on the STSA-LAB tile. Then select view details. Highlight the WorkspaceID, copy it and then paste it in a temporary spot.
-7. Click the link [a relative link](wk2-wcs-flow.json).
+7. Click the link [Conversation NodeRed Flow](wk2-wcs-flow.json).
 8. Copy the text and paste it into the NodeRed Editor. **Make sure to select "new flow" when importing.**
 8. Double click on the **IOT: ColorChange**. Make sure the device ID is the proper value, something similar to "sensehat-xx".
 10. Click done.
 11. Double click on the STSA-CONV node. Change the workspace ID to the one you copied when the workspace was saved. Step 6 above.
 12. Click done.
 13. Click Deploy
-14. Before the next step, copy the hostname of your NodeRed application. This is the hostname in the URL of your browser. Something like STSAWorkshops-xxx.mybluemix.net. You will need this for a future step. **Do not copy the "/red/..."** portion of the URL.
-14. Click the link
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
 
-15. When the BlueMix Devops page loads, click the **deploy** button at the bottom of the page.
-16. Click the **Delivery Pipeline** tile.
-17. Once the Deploy stage is completed, click on the **Rocket** icon. This will take you to your newly created application.
-18. Click on the **runtime** link on the left. Then click the **Environment Variables** link in the center.
-19. If you scroll down to the bottom you will see and entry for **Conversatin_URL**.
-20. Paste your URL from step 15 into the entry field. **Make sure to keep the "/v1/workspaces...." information**.
-21. Click Save.
-21. Click the Overview link on the left navigation. You might have to wait for the application to restart.
-22. Clik the **Visit APP URL** link.
-23. You will get an error. Add **/webclient** to your URL and click enter.
+
+
+      ### Webclient Application for WCS Lab
+      1. Before the next step, copy the hostname of your NodeRed application. This is the hostname in the URL of your browser. Something like **STSAWorkshops-xxx.mybluemix.net**. You will need this for a future step. **Do not copy the "/red/..."** portion of the URL.
+      14. Click the link
+      [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
+
+      15. When the BlueMix Devops page loads, click the **deploy** button at the bottom of the page.
+      16. Click the **Delivery Pipeline** tile.
+      17. Once the Deploy stage is completed, click on the **Rocket** icon. This will take you to your newly created application.
+      18. Click on the **runtime** link on the left. Then click the **Environment Variables** link in the center.
+      19. If you scroll down to the bottom you will see and entry for **Conversatin_URL**.
+      20. Paste your URL from step 15 into the entry field. **Make sure to keep the "/v1/workspaces...." information**.
+      21. Click Save.
+      21. Click the Overview link on the left navigation. You might have to wait for the application to restart.
+      22. Clik the **Visit APP URL** link.
+      23. You will get an error. Add **/webclient** to your URL and click enter.
 
 You are done. Nice job
+
 
 ## Hybrid Cloud
 Click the link  and copy the text. Paste it into a new flow in NodeRed
@@ -440,8 +474,8 @@ In this flow, there two **http request** nodes. You need your weather company da
 9. Click **Deploy**
 
 
-## Blockchain
 
+## Blockchain
 Go to NodeRed.
 
 1. Click the menu in the upper right corner.
