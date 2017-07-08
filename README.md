@@ -404,7 +404,7 @@ This lab can be completed following the steps below.
 11. Double click on the STSA-CONV node. Change the workspace ID to the one you copied when the workspace was saved. Step 6 above.
 12. Click done.
 13. Click Deploy
-14. Before the next step, copy the hostname of your NodeRed application. This is the hostname in the URL of your browers. Something like STSAWorkshops-xxx.mybluemix.net You will need this for a future step.
+14. Before the next step, copy the hostname of your NodeRed application. This is the hostname in the URL of your browser. Something like STSAWorkshops-xxx.mybluemix.net. You will need this for a future step. **Do not copy the "/red/..."** portion of the URL.
 14. Click the link
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
 
