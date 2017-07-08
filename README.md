@@ -423,4 +423,4 @@ This lab can be completed following the steps below.
 You are done. Nice job
 
 ## Hybrid Cloud
-[README](your-project-name/blob/master/completed-flows-part-1_2.json)
+[README](https://github.com/jdcalus/STSA-Workshop-3-Hybrid-Cloud/blob/master/completed-flows-part-1_2.json)
