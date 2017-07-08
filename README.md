@@ -397,5 +397,12 @@ This lab can be completed following the steps below.
 4. Once you are in the workspace import the JSON file, by clicking on the import icon at the top of the workspace dashboard.
 5. The screen should open to the newly created workspace. The icon at the bottom of the list of icons on the left navigation will take you back to workspaces. Click the icon. You should see the "STSA-Lab" workspace.
 6. Click the **3** buttons and select view details. Highlight the WorkspaceID, copy it and then paste it in a temporary spot.
-7. Click the link above for the "wk2-wcs-flow.json" file. Copy the text and paste it into the NodeRed Editor. Make sure to select "new flow" when importing.
-8. 
+7. Click the link at the top of the page for the "wk2-wcs-flow.json" file.
+8. Copy the text and paste it into the NodeRed Editor. **Make sure to select "new flow" when importing.**
+8. Double click on the **IOT: ColorChange**. Make sure the device ID is the proper value, something similar to "sensehat-xx".
+10. Click done.
+11. Double click on the STSA-CONV node. Change the workspace ID to the one you copied when the workspace was saved. Step 6 above.
+12. Click done.
+13. Click Deploy
+14. Click the link below.
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
